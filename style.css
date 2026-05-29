@@ -1,0 +1,223 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Fruktur', cursive;
+
+  /*
+  GANTI wallpaper.jpg dengan foto kamu sendiri
+  contoh:
+  background:url("assets/wallpaper.jpg");
+  */
+
+  background:
+  linear-gradient(rgba(0,0,0,0.7),
+  rgba(0,0,0,0.7)),
+  url("assets/wallpaper.jpg");
+
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+
+  color:white;
+}
+
+h1,h2{
+  font-family:'Jacquard 24', cursive;
+}
+
+.navbar{
+  position:sticky;
+  top:0;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  padding:20px 40px;
+
+  background:rgba(0,0,0,0.5);
+  backdrop-filter:blur(10px);
+
+  z-index:1000;
+}
+
+.logo{
+  font-size:28px;
+}
+
+.navbar ul{
+  display:flex;
+  gap:20px;
+  list-style:none;
+}
+
+.navbar a{
+  color:white;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.navbar a:hover{
+  color:#c8a2ff;
+}
+
+header{
+  text-align:center;
+  padding:80px 20px;
+}
+
+.photo-frame{
+
+  /*
+  GANTI diri saya.jpg dengan foto profil kamu
+  */
+
+  background:url("assets/diri saya.jpg");
+
+  width:180px;
+  height:180px;
+
+  background-size:cover;
+  background-position:center;
+
+  border-radius:50%;
+
+  margin:auto;
+  margin-bottom:20px;
+
+  border:4px solid rgba(255,255,255,0.3);
+
+  box-shadow:0 0 30px #c8a2ff;
+}
+
+section{
+  max-width:1100px;
+  margin:auto;
+  padding:30px 20px;
+}
+
+.card{
+  background:rgba(255,255,255,0.08);
+
+  backdrop-filter:blur(10px);
+
+  border-radius:20px;
+
+  padding:30px;
+
+  margin-bottom:30px;
+
+  box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+
+h2{
+  margin-bottom:20px;
+  color:#c8a2ff;
+}
+
+.skill-box p{
+  margin-top:15px;
+}
+
+.bar{
+  width:100%;
+  height:15px;
+
+  background:rgba(255,255,255,0.2);
+
+  border-radius:20px;
+
+  overflow:hidden;
+}
+
+.fill{
+  height:100%;
+  border-radius:20px;
+}
+
+.figma{
+  width:85%;
+  background:#c8a2ff;
+}
+
+.ui{
+  width:70%;
+  background:#c8a2ff;
+}
+
+.pbb{
+  width:90%;
+  background:#c8a2ff;
+}
+
+.edit{
+  width:75%;
+  background:#c8a2ff;
+}
+
+.gallery{
+  display:grid;
+
+  grid-template-columns:
+repeat(auto-fit,minmax(150px,1fr));
+  gap:20px;
+}
+
+.item{
+  background:rgba(255,255,255,0.05);
+
+  border-radius:15px;
+
+  overflow:hidden;
+
+  padding-bottom:15px;
+}
+
+.item img{
+  width:100%;
+  height:220px;
+
+  object-fit:cover;
+}
+
+.item p{
+  padding:10px;
+  text-align:center;
+}
+
+.socials{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.socials a{
+  display:flex;
+  align-items:center;
+  gap:10px;
+
+  padding:12px 20px;
+
+  border-radius:30px;
+
+  background:rgba(255,255,255,0.1);
+
+  text-decoration:none;
+  color:white;
+
+  transition:0.3s;
+}
+
+.socials a:hover{
+  transform:translateY(-5px);
+  background:#c8a2ff;
+}
+
+.socials img{
+  width:25px;
+}
